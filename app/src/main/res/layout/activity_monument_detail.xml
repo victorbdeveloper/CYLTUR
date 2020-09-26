@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutToolbarMonumentDetail"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBackActMonumentDetail"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_back"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvToolbarTitleActMonumentDetail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start"
+            android:text="@string/tv_toolbar_title_act_monument_detail"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/btnVehicleActMonumentDetail"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_go_google_maps"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_vehicle" />
+
+        <ImageView
+            android:id="@+id/btnMapActMonumentDetail"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_load_map"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_map" />
+
+        <ImageView
+            android:id="@+id/btnFavoriteActMonumentDetail"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_set_favorite"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_favorite_disable" />
+
+        <ImageView
+            android:id="@+id/btnHomeActMonumentDetail"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_home"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_home" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutActDetailAllWindow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutToolbarMonumentDetail">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutMap"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+        <ScrollView
+            android:id="@+id/scrollViewActDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDetailTitleName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_name"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:text="NOMBRE PRUEBA prueba " />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_province"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="PROVINCIA PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleLocality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_locality"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailLocality"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="LOCALIDAD PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleMunicipality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_municipality"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailMunicipality"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="MUNICIPIO PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleStreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_street"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailStreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="CALLE PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitlePostalCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_postal_code"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailPostalCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="CODIGO POSTAL PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitlePhones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_phones"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailPhones"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="TELEFONOS PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_email"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="EMAIL PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleWeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_web"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailWeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="WEB PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleSchedulesAndPrices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_schedules_and_prices"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailSchedulesAndPrices"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="HORARIOS Y TARIFAS PRUEBA prueba " />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleClassification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_classification"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailClassification"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="CLASIFICACION PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleMonumentType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_monument_type"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailMonumentType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="TIPO DE MONUMENTO PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleBuildingType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_building_type"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailBuildingType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="TIPO DE CONSTRUCCION PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleMainStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_main_style"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailMainStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="ESTILO PREDOMINANTE PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleHistoricalPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_historical_period"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailHistoricalPeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="PERIODO HISTORICO PRUEBA prueba" />
+
+                <TextView
+                    android:id="@+id/tvDetailTitleDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/ic_border"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="@string/tv_description"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDetailDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:autoLink="all"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textSize="15sp"
+                    tools:text="DESCRIPCION PRUEBA prueba" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

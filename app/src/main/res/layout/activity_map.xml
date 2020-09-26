@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityChooseProvince">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutToolbarMap"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBackActMap"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_back"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvToolbarTitleActMap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start"
+            android:text="@string/tv_toolbar_title_act_map"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/btnInfoActMap"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_info"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_info" />
+
+        <ImageView
+            android:id="@+id/btnFilterActMap"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_info"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_filter" />
+
+        <ImageView
+            android:id="@+id/btnHomeActMap"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_home"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_home" />
+
+    </LinearLayout>
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutToolbarMap"
+        tools:context=".activities.ActivityMap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

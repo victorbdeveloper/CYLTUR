@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">CYLTUR</string>
+
+    <string name="map_key">AIzaSyAfhTvjkonNxl_Npv-a7g0yDmvwvFrMOuk</string>
+
+    <string name="btn_see_map">VER MAPA</string>
+    <string name="btn_monuments_list">LISTA MONUMENTOS</string>
+    <string name="btn_favorites">FAVORITOS</string>
+    <string name="btn_configuration">CONFIGURACIÓN</string>
+    <string name="btn_remove_all">Quitar todos</string>
+    <string name="btn_select_all">Seleccionar todos</string>
+    <string name="btn_acept">Aceptar</string>
+    <string name="btn_save">Guardar</string>
+
+    <string name="iv_btn_back">Icono de botón de ir atrás</string>
+    <string name="iv_btn_go_google_maps">Icono de botón de ir a Google Maps</string>
+    <string name="iv_btn_set_favorite">Icono de botón añadir a favoritos</string>
+    <string name="iv_btn_load_map">Icono de botón de abrir en el mapa</string>
+    <string name="iv_btn_home">Icono de botón de ir al menu principal</string>
+    <string name="iv_btn_info">Icono de botón de mostrar la información del monumento seleccionado</string>
+
+    <string name="iv_logo_description">Escudo de CyL con leyenda debajo</string>
+    <string name="iv_splashscreen_window">Imagen del SplashScreen</string>
+    <string name="iv_shearch_bar_icon">Icono de barra de búsqueda</string>
+    <string name="iv_delete_text_from_search_bar_icon">Icono de borrar texto de la barra de busqueda</string>
+
+    <string name="tv_toolbar_title_act_configuration">CONFIGURACIÓN</string>
+    <string name="tv_toolbar_title_act_choose_provinces">PROVINCIAS</string>
+    <string name="tv_toolbar_title_act_monument_detail">DETALLE</string>
+    <string name="tv_toolbar_title_act_monument_list">MONUMENTOS</string>
+    <string name="tv_toolbar_title_act_map">MAPA</string>
+
+    <string name="tv_map_type">Tipo de mapa:</string>
+    <string name="tv_no_data">NO HAY DATOS</string>
+    <string name="tv_name">Nombre:</string>
+    <string name="tv_street">Calle:</string>
+    <string name="tv_locality">Localidad:</string>
+    <string name="tv_municipality">Municipio:</string>
+    <string name="tv_province">Provincia:</string>
+    <string name="tv_postal_code">C.P.:</string>
+    <string name="tv_phones">Teléfonos:</string>
+    <string name="tv_email">Email:</string>
+    <string name="tv_web">Web:</string>
+    <string name="tv_schedules_and_prices">Horarios y tarifas:</string>
+    <string name="tv_classification">Clasificación:</string>
+    <string name="tv_monument_type">Tipo de monumento:</string>
+    <string name="tv_building_type">Tipo de construcción:</string>
+    <string name="tv_main_style">Estilo predominante:</string>
+    <string name="tv_historical_period">Periodo Histórico</string>
+    <string name="tv_description">Descripción:</string>
+    <string name="tv_application_color">Color de la aplicación</string>
+    <string name="tv_click_to_choose">click aquí</string>
+
+    <string name="cb_avila">Ávila</string>
+    <string name="cb_burgos">Burgos</string>
+    <string name="cb_leon">León</string>
+    <string name="cb_palencia">Palencia</string>
+    <string name="cb_salamanca">Salamanca</string>
+    <string name="cb_segovia">Segovia</string>
+    <string name="cb_soria">Soria</string>
+    <string name="cb_valladolid">Valladolid</string>
+    <string name="cb_zamora">Zamora</string>
+
+    <string name="rb_map_normal_type">Normal (Por defecto)</string>
+    <string name="rb_map_hybrid_type">Híbrido</string>
+    <string name="rb_map_satellite_type">Satélite</string>
+    <string name="rb_map_terrain_type">Terreno</string>
+    <string name="rb_personaliced">Personalizado</string>
+    <string name="rb_default">Por defecto</string>
+
+    <string name="et_search_monument">Buscar monumento</string>
+
+</resources>

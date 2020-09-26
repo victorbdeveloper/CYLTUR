@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ActivityMonumentsList">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutToolbarMonumentsList"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBackActMonumentList"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_back"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/tvToolbarTitleActMonumentList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|start"
+            android:text="@string/tv_toolbar_title_act_monument_list"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/btnFilterActMonumentsList"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_info"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_filter" />
+
+        <ImageView
+            android:id="@+id/btnHomeActMonumentsList"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?selectableItemBackgroundBorderless"
+            android:contentDescription="@string/iv_btn_home"
+            android:padding="16dp"
+            app:srcCompat="@drawable/ic_home" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints="Buscar monumento por nombre"
+        android:hint="@string/et_search_monument"
+        android:iconifiedByDefault="false"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineActMonumentsList"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutToolbarMonumentsList" />
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="3dp"
+        android:contentDescription="@string/iv_shearch_bar_icon"
+        app:layout_constraintBottom_toBottomOf="@id/etSearch"
+        app:layout_constraintStart_toStartOf="@id/etSearch"
+        app:layout_constraintTop_toTopOf="@id/etSearch"
+        app:srcCompat="@drawable/ic_search" />
+
+    <ImageView
+        android:id="@+id/ivClearText"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="3dp"
+        android:contentDescription="@string/iv_delete_text_from_search_bar_icon"
+        app:layout_constraintBottom_toBottomOf="@id/etSearch"
+        app:layout_constraintEnd_toEndOf="@id/etSearch"
+        app:layout_constraintTop_toTopOf="@id/etSearch"
+        app:srcCompat="@drawable/ic_close" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineActMonumentsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="300dp" />
+
+    <TextView
+        android:id="@+id/tvResultsCountActMonumentsList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="3dp"
+        android:lines="1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@id/etSearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guidelineActMonumentsList"
+        app:layout_constraintTop_toTopOf="@id/etSearch"
+        tools:text="1344 resultados" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvActMonumentsList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingTop="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSearch">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFloatingActionUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_arrow_up" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
